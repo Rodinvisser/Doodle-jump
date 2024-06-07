@@ -1,0 +1,86 @@
+* {
+    -webkit-font-smoothing: antialiased; /* This needs to be set or some font faced fonts look bold on Mac in Chrome/Webkit based browsers. */
+    -moz-osx-font-smoothing: grayscale; /* Fixes font bold issue in Firefox version 25+ on Mac */
+
+     box-sizing: border-box;
+}
+
+body,html{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.game-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -197px;
+    margin-top: -158px;
+    width: 394px;
+    height: 316px;
+    background-color: rebeccapurple;
+    overflow: hidden;
+}
+
+.game-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.game-screen.--start-screen {
+    padding-top: 80px;
+}
+
+.game-screen.--start-screen h1 {
+    padding-bottom: 30px;
+}
+
+.button {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 4px 15px;
+    color: black;
+    border-radius: 2px;
+    background-color: greenyellow;
+    display: inline-block;
+}
+
+.jumper {
+    background-color: white;
+    width: 20px;
+    height: 30px;
+    margin-left: -10px;
+    margin-top: -30px;
+    position: absolute;
+}
+
+.platforms-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.platform {
+    display: none;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+}
+.platform.--normal {
+    width: 80px;
+}
+.platform.--wide {
+    width: 250px;
+}
